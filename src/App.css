@@ -3,12 +3,13 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
 body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: #61dafb;
   display: flex;
   align-items: center;
@@ -40,7 +41,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform .5s;
+  transition: transform 0.5s;
 }
 
 .card img {
@@ -48,7 +49,7 @@ h1 {
   max-height: 80%;
   transform: scale(0);
   animation: 2s hideImage linear;
-  transition: transform .5s;
+  transition: transform 0.5s;
 }
 
 .card.active {
@@ -75,7 +76,8 @@ h1 {
 }
 
 @keyframes hideCard {
-  0%, 50% {
+  0%,
+  50% {
     transform: rotateY(0);
   }
   100% {
@@ -84,7 +86,8 @@ h1 {
 }
 
 @keyframes hideImage {
-  0%, 50% {
+  0%,
+  50% {
     transform: scale(1);
   }
   100% {
