@@ -55,7 +55,7 @@ function Cards() {
   }
 
   function handleClick(id) {
-    if (prev !== id && isClickable) {
+    if (prev !== id && isClickable && items[id].stat !== "correct") {
       if (prev === -1) {
         items[id].stat = "active";
 
